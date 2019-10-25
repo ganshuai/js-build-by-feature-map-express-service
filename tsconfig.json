@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "sourceMap": false,
+    "allowJs": true,
+    "outDir": "./dist",
+    "noImplicitAny": false,
+    "target": "es5"
+  },
+  "include": ["./src"]
+}
