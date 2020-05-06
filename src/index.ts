@@ -142,7 +142,9 @@ function parseCookie(cookies: string) {
   const cookieMap: dynamicProperty = {}
   const cookieList = cookies.split(';')
   cookieList.forEach((cookie) => {
-      const [name, value] = cookie.split('=')
+      const nameValueList = cookie.split('=')
+      const name = (nameValueList[0] || '').trim()
+      const value = (nameValueList[1] || '').trim()
       name && (cookieMap[name] = value)
   })
 
